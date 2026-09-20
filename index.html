@@ -1,1124 +1,480 @@
 <!DOCTYPE html>
-<html lang="en-IN">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-    <meta name="google-site-verification" content="Ku5Od99scOfuI_NO77nmPxOPLsB9AGW72RrlhLBaFlo" />
-    
-    <!-- Security Headers & Content Security Policy -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https: data:; img-src 'self' https: data: blob:; font-src 'self' https: data:; style-src 'self' 'unsafe-inline' https:; script-src 'self' 'unsafe-inline' https:;">
-    <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
-    <meta name="referrer" content="strict-origin-when-cross-origin">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Xpert Air Conditioner — Ahmedabad</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --night:#0D1B2A;
+    --night-2:#12293D;
+    --heat:#FF6B1A;
+    --cool:#5CE1D6;
+    --paper:#F4F6F5;
+    --ink:#0D1B2A;
+    --ink-soft:#5A6B76;
+    --line:rgba(13,27,42,0.10);
+  }
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{
+    margin:0;
+    font-family:'Inter', sans-serif;
+    color:var(--ink);
+    background:
+      radial-gradient(circle at 15% -10%, rgba(255,107,26,0.10), transparent 45%),
+      radial-gradient(circle at 90% 0%, rgba(92,225,214,0.14), transparent 40%),
+      var(--paper);
+    min-height:100vh;
+  }
+  h1,h2,h3{ font-family:'Archivo', sans-serif; margin:0; }
+  a{ text-decoration:none; color:inherit; }
 
-    <!-- Primary SEO Meta Tags -->
-    <title>Xpert Air System | Premier AC Service, Repair, Sales & AMC Ahmedabad</title>
-    <meta name="title" content="Xpert Air System | Premier AC Service, Repair, Sales & AMC Ahmedabad">
-    <meta name="description" content="Xpert Air System offers expert air conditioning installation, repair, deep jet cleaning, sales, and yearly AMC services across all areas in Ahmedabad (Behrampura, Satellite, Maninagar, SG Highway). Led by Kaif Shaikh. Call +91 9375228576.">
-    <meta name="keywords" content="Xpert Air System, AC repair Ahmedabad, AC installation Ahmedabad, AC jet servicing, split AC repair, AC sales Ahmedabad, AC AMC contract, Behrampura AC technician, Satellite AC service, Maninagar AC repair">
-    <meta name="author" content="Xpert Air System">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://xpertairsystem.github.io/xpertairsystem/">
-    
-    <!-- Geo-location Metadata (Ahmedabad / Behrampura) -->
-    <meta name="geo.region" content="IN-GJ">
-    <meta name="geo.placename" content="Ahmedabad">
-    <meta name="geo.position" content="23.0039569;72.5871102">
-    <meta name="ICBM" content="23.0039569,72.5871102">
+  /* ---------- Top card ---------- */
+  .page{
+    max-width: 460px;
+    margin: 0 auto;
+    padding: 48px 22px 70px;
+  }
+  .logo{
+    width: 96px; height: 96px;
+    margin: 0 auto 22px;
+    border-radius: 22px;
+    display:flex; align-items:center; justify-content:center;
+    overflow:hidden;
+  }
+  .logo img{
+    display:block;
+    width:100%;
+    height:100%;
+    object-fit:contain;
+  }
+  .brand-title{
+    text-align:center;
+    font-size: 2rem;
+    font-weight:900;
+    letter-spacing:-0.01em;
+  }
+  .brand-sub{
+    text-align:center;
+    margin-top:8px;
+    color:var(--ink-soft);
+    font-size: 1rem;
+  }
+  .brand-loc{
+    text-align:center;
+    margin-top:4px;
+    color: var(--heat);
+    font-weight:600;
+    font-size: 0.92rem;
+  }
 
-    <!-- Open Graph / Social Sharing Meta Tags -->
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Xpert Air System">
-    <meta property="og:url" content="https://xpertairsystem.github.io/xpertairsystem/">
-    <meta property="og:title" content="Xpert Air System | Fast Doorstep AC Repair & Service in Ahmedabad">
-    <meta property="og:description" content="5+ Years Experience. Professional AC repair, deep jet servicing, fitting, discounted AC sales, and AMC contracts across Ahmedabad. Call +91 9375228576.">
-    <meta property="og:image" content="logo.png">
+  /* ---------- Link buttons ---------- */
+  .links{
+    margin-top: 34px;
+    display:flex;
+    flex-direction:column;
+    gap: 13px;
+  }
+  .link-btn{
+    display:flex;
+    align-items:center;
+    gap: 14px;
+    background:#fff;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 17px 20px;
+    font-weight:700;
+    font-size: 1.02rem;
+    box-shadow: 0 2px 6px rgba(13,27,42,0.04);
+    transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+  }
+  .link-btn:active{ transform: scale(0.985); }
+  .link-btn:hover{ box-shadow: 0 10px 22px rgba(13,27,42,0.10); border-color: rgba(13,27,42,0.16); }
+  .link-icon{
+    width: 42px; height:42px;
+    border-radius: 12px;
+    display:flex; align-items:center; justify-content:center;
+    flex-shrink:0;
+  }
+  .link-icon svg{ width:20px; height:20px; }
+  .brand-icon img{ display:block; width:24px; height:24px; }
+  .brand-icon.ic-maps img{ filter: invert(39%) sepia(98%) saturate(1457%) hue-rotate(194deg) brightness(91%) contrast(94%); }
+  .brand-icon.ic-google img{ filter: invert(48%) sepia(97%) saturate(1854%) hue-rotate(202deg) brightness(95%) contrast(92%); }
+  .link-arrow{ margin-left:auto; opacity:0.35; }
+  .link-arrow svg{ width:16px; height:16px; }
 
-    <!-- Twitter Card Tags -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" content="Xpert Air System | Premier AC Service & Sales Ahmedabad">
-    <meta property="twitter:description" content="Fast doorstep AC service, installation, and repairs in Ahmedabad. Contact us for instant booking.">
-    
-    <!-- External Fonts & Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet">
+  .ic-maps{ background:#E9F2FF; color:#1D6FE0; }
+  .ic-call{ background:#E9F9F0; color:#12A150; }
+  .ic-wa{ background:#E7FBF7; color:#0FBFA5; }
+  .ic-serv{ background:#FFF0E6; color:var(--heat); }
+  .ic-contact{ background:#F0EEFF; color:#6C5CE7; }
 
-    <!-- JSON-LD Schema.org Structured Data (LocalBusiness / HVACBusiness) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "HVACBusiness",
-      "@id": "https://xpertairsystem.github.io/#organization",
-      "name": "Xpert Air System",
-      "image": "https://xpertairsystem.github.io/logo.png",
-      "url": "https://xpertairsystem.github.io/",
-      "telephone": "+919375228576",
-      "priceRange": "₹₹",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "10, Block 11, PARIKSHIT LAL NAGAR, BEHRAMPURA",
-        "addressLocality": "Ahmedabad",
-        "addressRegion": "Gujarat",
-        "postalCode": "380022",
-        "addressCountry": "IN"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 23.0039569,
-        "longitude": 72.5871102
-      },
-      "hasMap": "https://maps.app.goo.gl/KXDGNz6Ux1KNZ3UQA",
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "opens": "09:00",
-          "closes": "22:00"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Sunday",
-          "opens": "09:00",
-          "closes": "22:00"
-        }
-      ],
-      "areaServed": [
-        "Behrampura",
-        "Satellite",
-        "Maninagar",
-        "SG Highway",
-        "Bodakdev",
-        "Paldi",
-        "Ellisbridge",
-        "Vastrapur",
-        "Navrangpura",
-        "Ghatlodia",
-        "Chandkheda",
-        "Bopal",
-        "Ahmedabad"
-      ],
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "reviewCount": "168"
-      },
-      "founders": [
-        { "@type": "Person", "name": "Aakib Patel" },
-        { "@type": "Person", "name": "Kaif Shaikh" }
-      ]
-    }
-    </script>
+  /* ---------- Services section ---------- */
+  #services{
+    margin-top: 54px;
+  }
+  .sec-label{
+    text-align:center;
+    font-weight:700;
+    font-size: 0.85rem;
+    letter-spacing:0.02em;
+    color: var(--ink-soft);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  .services-list{
+    display:flex;
+    flex-direction:column;
+    gap: 10px;
+  }
+  .srv-row{
+    display:flex;
+    align-items:center;
+    gap: 14px;
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius: 14px;
+    padding: 14px 18px;
+  }
+  .srv-row .dot{
+    width: 8px; height:8px;
+    border-radius:50%;
+    background: var(--heat);
+    flex-shrink:0;
+  }
+  .srv-row span{ font-size:0.95rem; font-weight:600; }
 
-    <style>
-    :root {
-        --primary-navy: #0B2545;
-        --navy-light: #133863;
-        --vibrant-blue: #0066FF;
-        --vibrant-blue-hover: #0052CC;
-        --accent-cyan: #00D2FF;
-        --soft-ice: #F4F8FC;
-        --pure-white: #FFFFFF;
-        
-        --text-dark: #0F172A;
-        --text-muted: #64748B;
-        --whatsapp-green: #25D366;
-        --whatsapp-hover: #1EBE5B;
-        --amber-gold: #F59E0B;
-        --google-red: #EA4335;
-        --google-blue: #4285F4;
-        
-        --shadow-subtle: 0 10px 30px rgba(11, 37, 69, 0.06);
-        --shadow-hover: 0 20px 40px rgba(11, 37, 69, 0.12);
-        --glass-bg: rgba(255, 255, 255, 0.94);
-        --radius-sm: 8px;
-        --radius-md: 12px;
-        --radius-lg: 20px;
-        --radius-full: 9999px;
-    }
+  /* ---------- Contact section ---------- */
+  #contact{
+    margin-top: 54px;
+  }
+  .contact-box{
+    background: var(--night);
+    border-radius: 20px;
+    padding: 30px 26px;
+    color: var(--paper);
+    text-align:center;
+  }
+  .contact-box h2{
+    font-size: 1.3rem;
+    font-weight: 800;
+  }
+  .contact-box p{
+    margin-top: 8px;
+    color: rgba(244,246,245,0.65);
+    font-size: 0.92rem;
+    line-height: 1.5;
+  }
+  .contact-box .links{ margin-top:22px; }
+  .contact-box .link-btn{
+    background: rgba(244,246,245,0.06);
+    border-color: rgba(244,246,245,0.14);
+    color: var(--paper);
+  }
+  .contact-box .link-btn .ic-mail{ background: rgba(92,225,214,0.14); color: var(--cool); }
 
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', system-ui, -apple-system, sans-serif; scroll-behavior: smooth; }
-    body { color: var(--text-dark); background-color: var(--pure-white); line-height: 1.6; overflow-x: hidden; padding-bottom: 70px; }
-    @media (min-width: 769px) { body { padding-bottom: 0; } }
 
-    h1, h2, h3, h4 { font-family: 'Outfit', sans-serif; }
-    a { text-decoration: none; color: inherit; transition: all 0.25s ease; }
-    button, input, select, textarea { font-family: inherit; }
+  /* ---------- AMC modal ---------- */
+  .amc-modal{
+    display:none;
+    position:fixed;
+    inset:0;
+    z-index:1000;
+    padding:20px;
+    background:rgba(13,27,42,0.72);
+    align-items:center;
+    justify-content:center;
+  }
+  .amc-modal.show{ display:flex; }
+  .amc-box{
+    width:min(100%, 720px);
+    max-height:92vh;
+    overflow:auto;
+    position:relative;
+    background:#fff;
+    border-radius:22px;
+    padding:28px 20px 22px;
+    box-shadow:0 24px 70px rgba(0,0,0,0.28);
+  }
+  .amc-close{
+    position:absolute;
+    top:10px;
+    right:12px;
+    width:38px;
+    height:38px;
+    border:0;
+    border-radius:50%;
+    background:#F1F3F4;
+    color:var(--ink);
+    font-size:25px;
+    line-height:1;
+    cursor:pointer;
+  }
+  .amc-title{ text-align:center; font-size:1.45rem; margin:0 42px 6px; }
+  .amc-subtitle{ text-align:center; color:var(--ink-soft); font-size:.88rem; margin:0 0 18px; }
+  .amc-plans{
+    display:grid;
+    grid-template-columns:repeat(3, minmax(0,1fr));
+    gap:12px;
+  }
+  .amc-plan{
+    border:2px solid var(--line);
+    border-radius:16px;
+    padding:15px;
+    background:#fff;
+    cursor:pointer;
+    transition:border-color .15s ease, transform .15s ease, box-shadow .15s ease;
+  }
+  .amc-plan:hover{ transform:translateY(-2px); box-shadow:0 8px 20px rgba(13,27,42,.08); }
+  .amc-plan.selected{ border-color:var(--heat); box-shadow:0 0 0 3px rgba(255,107,26,.10); }
+  .amc-plan h3{ font-size:1rem; margin-bottom:5px; }
+  .amc-price{ font-size:1.15rem; font-weight:800; color:var(--heat); margin-bottom:10px; }
+  .amc-features{
+    list-style:none;
+    padding:0;
+    margin:10px 0 0;
+    display:grid;
+    gap:7px;
+  }
+  .amc-features li{
+    position:relative;
+    padding:8px 9px 8px 28px;
+    border-radius:9px;
+    background:#F8FAF9;
+    border:1px solid #E7ECEA;
+    color:var(--ink-soft);
+    font-size:.78rem;
+    line-height:1.3;
+  }
+  .amc-features li::before{
+    content:"✓";
+    position:absolute;
+    left:9px;
+    top:7px;
+    font-weight:800;
+    color:var(--heat);
+  }
+  .amc-hint{ margin:12px 0 10px; text-align:center; color:var(--ink-soft); font-size:.78rem; }
+  .amc-whatsapp{
+    width:100%;
+    border:0;
+    border-radius:13px;
+    padding:14px 18px;
+    background:#25D366;
+    color:#fff;
+    font:700 1rem 'Inter',sans-serif;
+    cursor:pointer;
+  }
+  .amc-whatsapp:hover{ filter:brightness(.96); }
+  .amc-whatsapp img{ width:22px; height:22px; vertical-align:middle; margin-right:7px; filter:brightness(0) invert(1); }
+  @media(max-width:680px){
+    .amc-plans{ grid-template-columns:1fr; }
+    .amc-box{ padding:28px 14px 18px; }
+    .amc-plan{ padding:14px; }
+  }
 
-    .brand-top-bar { height: 5px; background: linear-gradient(90deg, var(--vibrant-blue), var(--accent-cyan), var(--primary-navy)); }
-    .container { max-width: 1240px; margin: 0 auto; padding: 0 1.5rem; }
-
-    /* --- Compact Top Info Bar --- */
-    .top-info-bar { background-color: var(--primary-navy); color: var(--pure-white); padding: 0.45rem 0; font-size: 0.82rem; border-bottom: 1px solid rgba(255, 255, 255, 0.08); }
-    .top-info-bar .container { display: flex; justify-content: space-between; align-items: center; }
-    .top-left-info { display: flex; gap: 1.5rem; align-items: center; }
-    .top-item { display: flex; align-items: center; gap: 6px; font-weight: 500; }
-    .top-item i { color: var(--accent-cyan); font-size: 0.85rem; }
-    .emergency-link { color: var(--accent-cyan); font-weight: 700; display: inline-flex; align-items: center; gap: 6px; background: rgba(0, 210, 255, 0.12); padding: 0.2rem 0.75rem; border-radius: var(--radius-full); }
-    .emergency-link:hover { background: rgba(0, 210, 255, 0.25); color: var(--pure-white); }
-
-    /* --- Header & Mobile Drawer Navigation --- */
-    header { position: sticky; top: 0; background: var(--glass-bg); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); box-shadow: var(--shadow-subtle); z-index: 1000; padding: 0.55rem 0; border-bottom: 1px solid rgba(0,0,0,0.04); }
-    .navbar { display: flex; justify-content: space-between; align-items: center; }
-    
-    .card-exact-logo { display: flex; align-items: center; gap: 10px; cursor: pointer; text-decoration: none; }
-    .logo-svg { width: 62px; height: auto; filter: drop-shadow(0 2px 4px rgba(11, 37, 69, 0.12)); }
-    
-    .logo-snowflake { transform-origin: 50px 12px; animation: spinSnow 12s linear infinite; }
-    @keyframes spinSnow { 100% { transform: rotate(360deg); } }
-    
-    .card-exact-logo:hover .logo-wave { animation: flowWave 1.2s ease-in-out infinite alternate; }
-    @keyframes flowWave { 0% { transform: translateY(0); } 100% { transform: translateY(-2px); } }
-
-    .logo-text-col { display: flex; flex-direction: column; justify-content: center; }
-    .brand-name-main { font-family: 'Outfit', sans-serif; font-size: 1.65rem; font-weight: 900; color: var(--primary-navy); letter-spacing: -0.2px; line-height: 1; }
-    .brand-subtext { font-size: 0.75rem; font-weight: 800; color: var(--vibrant-blue); letter-spacing: 0.5px; margin-top: 3px; text-transform: uppercase; }
-
-    .nav-menu { display: flex; gap: 1.6rem; align-items: center; list-style: none; }
-    .nav-link { font-weight: 600; font-size: 0.9rem; color: var(--text-dark); position: relative; padding: 0.2rem 0; }
-    .nav-link::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 2px; background: var(--vibrant-blue); transition: width 0.3s; }
-    .nav-link:hover::after { width: 100%; }
-    .nav-link:hover { color: var(--vibrant-blue); }
-    
-    .btn-header { background: linear-gradient(135deg, var(--vibrant-blue), var(--primary-navy)); color: var(--pure-white); padding: 0.6rem 1.3rem; border-radius: var(--radius-full); font-weight: 700; font-size: 0.88rem; box-shadow: 0 4px 15px rgba(0, 102, 255, 0.25); display: inline-flex; align-items: center; gap: 8px; }
-    .btn-header:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0, 102, 255, 0.35); color: var(--pure-white); }
-
-    /* Mobile Nav Toggle */
-    .mobile-nav-toggle { display: none; background: none; border: none; font-size: 1.4rem; color: var(--primary-navy); cursor: pointer; padding: 0.4rem; border-radius: var(--radius-sm); }
-    
-    /* Slide-out Mobile Drawer */
-    .mobile-drawer { position: fixed; top: 0; right: -100%; width: 280px; height: 100vh; background: var(--pure-white); z-index: 1002; box-shadow: -10px 0 30px rgba(0,0,0,0.15); transition: right 0.35s ease; padding: 2rem 1.5rem; display: flex; flex-direction: column; justify-content: space-between; }
-    .mobile-drawer.active { right: 0; }
-    .drawer-overlay { position: fixed; inset: 0; background: rgba(11, 37, 69, 0.5); backdrop-filter: blur(4px); z-index: 1001; opacity: 0; visibility: hidden; transition: 0.3s ease; }
-    .drawer-overlay.active { opacity: 1; visibility: visible; }
-    
-    .drawer-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(0,0,0,0.08); padding-bottom: 1rem; margin-bottom: 1.5rem; }
-    .drawer-close { background: none; border: none; font-size: 1.5rem; color: var(--text-dark); cursor: pointer; }
-    .drawer-menu { list-style: none; display: flex; flex-direction: column; gap: 1.2rem; }
-    .drawer-menu a { font-size: 1.05rem; font-weight: 700; color: var(--primary-navy); display: flex; align-items: center; gap: 10px; }
-
-    /* --- Clean & Airy Hero Section --- */
-    .hero-clean { padding: 4rem 0 3rem; text-align: center; background: radial-gradient(circle at top, rgba(0, 210, 255, 0.1), transparent 65%), linear-gradient(180deg, var(--soft-ice) 0%, var(--pure-white) 100%); position: relative; }
-    .hero-clean-inner { max-width: 860px; margin: 0 auto; }
-    
-    /* Responsive Scalable Badge */
-    .hero-badge { display: inline-flex; align-items: center; gap: 8px; background-color: rgba(0, 102, 255, 0.08); color: var(--vibrant-blue); padding: 0.45rem 1.1rem; border-radius: var(--radius-full); font-weight: 700; font-size: 0.85rem; margin-bottom: 1.2rem; border: 1px solid rgba(0, 102, 255, 0.18); max-width: 100%; white-space: normal; text-align: left; }
-    .hero-badge i { color: var(--amber-gold); }
-
-    .hero-clean h1 { font-size: 3.1rem; font-weight: 900; color: var(--primary-navy); margin-bottom: 1.1rem; line-height: 1.15; letter-spacing: -0.5px; }
-    .hero-clean h1 span { color: var(--vibrant-blue); background: linear-gradient(135deg, var(--vibrant-blue), var(--primary-navy)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-    .hero-clean p { font-size: 1.12rem; color: var(--text-muted); margin-bottom: 2rem; line-height: 1.6; max-width: 720px; margin-left: auto; margin-right: auto; }
-    
-    /* App-like Touch Friendly CTA Buttons */
-    .hero-cta-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
-    .btn-cta { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 0.9rem 1.8rem; border-radius: var(--radius-full); font-weight: 800; font-size: 0.98rem; cursor: pointer; transition: all 0.25s ease; border: none; min-height: 48px; min-width: 180px; }
-    .btn-primary { background: linear-gradient(135deg, var(--vibrant-blue), var(--primary-navy)); color: var(--pure-white); box-shadow: 0 8px 25px rgba(0, 102, 255, 0.28); }
-    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 30px rgba(0, 102, 255, 0.38); color: var(--pure-white); }
-    .btn-wa { background-color: var(--whatsapp-green); color: var(--pure-white); box-shadow: 0 8px 25px rgba(37, 211, 102, 0.28); }
-    .btn-wa:hover { background-color: var(--whatsapp-hover); transform: translateY(-2px); box-shadow: 0 12px 30px rgba(37, 211, 102, 0.38); color: var(--pure-white); }
-    .btn-outline { background: var(--pure-white); color: var(--primary-navy); border: 2px solid rgba(11, 37, 69, 0.15); box-shadow: var(--shadow-subtle); }
-    .btn-outline:hover { background: var(--soft-ice); border-color: var(--vibrant-blue); transform: translateY(-2px); }
-
-    /* --- Trust Stats Bar --- */
-    .trust-stats-bar { background: var(--primary-navy); color: var(--pure-white); padding: 1.8rem 0; border-top: 4px solid var(--accent-cyan); }
-    .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; text-align: center; }
-    .stat-item h3 { font-size: 1.85rem; font-weight: 900; color: var(--accent-cyan); margin-bottom: 0.2rem; }
-    .stat-item p { font-size: 0.88rem; color: rgba(255, 255, 255, 0.88); font-weight: 500; }
-
-    /* --- Section Headers --- */
-    .section-header { text-align: center; margin-bottom: 3rem; }
-    .section-header h2 { font-size: 2.3rem; font-weight: 800; color: var(--primary-navy); letter-spacing: -0.3px; }
-    .section-header p { color: var(--text-muted); font-size: 1rem; margin-top: 0.5rem; max-width: 650px; margin-left: auto; margin-right: auto; }
-
-    /* --- Services Section --- */
-    .services-section { padding: 4.5rem 0; background-color: var(--soft-ice); }
-    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 1.8rem; }
-    
-    .service-card { background: var(--pure-white); border-radius: var(--radius-lg); padding: 2rem 1.6rem; box-shadow: var(--shadow-subtle); transition: all 0.3s ease; border: 1px solid rgba(0,0,0,0.05); display: flex; flex-direction: column; position: relative; overflow: hidden; }
-    .service-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-hover); border-color: rgba(0, 102, 255, 0.25); }
-    .service-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: linear-gradient(90deg, var(--vibrant-blue), var(--accent-cyan)); }
-    
-    .price-tag-badge { position: absolute; top: 18px; right: 18px; background: rgba(0, 102, 255, 0.08); color: var(--vibrant-blue); font-weight: 800; font-size: 0.8rem; padding: 0.3rem 0.75rem; border-radius: var(--radius-full); border: 1px solid rgba(0, 102, 255, 0.18); }
-    .price-tag-badge.highlight-tag { background: var(--amber-gold); color: var(--primary-navy); border: none; }
-
-    .service-emoji { font-size: 2.5rem; margin-bottom: 0.8rem; line-height: 1; }
-    .service-card h3 { font-size: 1.3rem; color: var(--primary-navy); margin-bottom: 0.6rem; padding-right: 2.5rem; font-weight: 800; }
-    .service-card p { color: var(--text-muted); font-size: 0.92rem; margin-bottom: 1.2rem; flex-grow: 1; line-height: 1.5; }
-    .service-highlights { list-style: none; margin-bottom: 1.5rem; font-size: 0.86rem; color: var(--text-dark); }
-    .service-highlights li { display: flex; align-items: flex-start; gap: 8px; margin-bottom: 0.45rem; font-weight: 600; }
-    .service-highlights li i { color: var(--vibrant-blue); font-size: 0.85rem; margin-top: 3px; }
-
-    .service-card.highlight-card { background: linear-gradient(135deg, #0B2545 0%, #133863 100%); color: var(--pure-white); }
-    .service-card.highlight-card h3 { color: var(--pure-white); }
-    .service-card.highlight-card p { color: rgba(255, 255, 255, 0.88); }
-    .service-card.highlight-card .service-highlights { color: var(--pure-white); }
-    .service-card.highlight-card .service-highlights li i { color: var(--accent-cyan); }
-
-    /* --- Types of AC Section --- */
-    .ac-types-banner { padding: 4rem 0; background: var(--pure-white); border-bottom: 1px solid rgba(0,0,0,0.05); }
-    .types-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 1.2rem; text-align: center; }
-    .type-item { background: var(--soft-ice); padding: 1.6rem 1rem; border-radius: var(--radius-md); border: 1px solid rgba(0, 102, 255, 0.08); transition: 0.3s; }
-    .type-item:hover { background: var(--pure-white); box-shadow: var(--shadow-subtle); transform: translateY(-4px); }
-    .type-icon { font-size: 2.2rem; color: var(--vibrant-blue); margin-bottom: 0.6rem; }
-    .type-item h4 { font-size: 1.05rem; color: var(--primary-navy); font-weight: 700; }
-
-    /* --- AMC Banner --- */
-    .discount-banner { padding: 4rem 0; background: var(--pure-white); }
-    .banner-box { background: linear-gradient(135deg, var(--vibrant-blue) 0%, var(--primary-navy) 100%); border-radius: var(--radius-lg); padding: 3rem 2.2rem; color: var(--pure-white); display: grid; grid-template-columns: 2fr 1fr; gap: 2rem; align-items: center; box-shadow: var(--shadow-hover); }
-    .banner-box h2 { font-size: 2.1rem; margin-bottom: 0.8rem; color: var(--pure-white); font-weight: 800; }
-    .banner-box p { font-size: 1.02rem; opacity: 0.94; margin-bottom: 1.5rem; line-height: 1.5; }
-    .banner-tags { display: flex; gap: 0.6rem; flex-wrap: wrap; }
-    .banner-tag { background: rgba(255, 255, 255, 0.15); backdrop-filter: blur(5px); padding: 0.35rem 0.9rem; border-radius: var(--radius-full); font-size: 0.82rem; font-weight: 600; border: 1px solid rgba(255, 255, 255, 0.25); }
-
-    /* --- Google Reviews & Interactive Review System --- */
-    .reviews-section { padding: 4.5rem 0; background: linear-gradient(180deg, var(--pure-white) 0%, var(--soft-ice) 100%); }
-    .google-badge-box { background: var(--pure-white); border-radius: var(--radius-md); padding: 1.2rem 2rem; display: inline-flex; align-items: center; gap: 1.2rem; box-shadow: var(--shadow-subtle); border: 1px solid rgba(0,0,0,0.06); margin-bottom: 2.5rem; flex-wrap: wrap; justify-content: center; }
-    .google-g-icon { width: 36px; height: 36px; }
-    .google-score { font-size: 1.8rem; font-weight: 900; color: var(--primary-navy); line-height: 1; }
-    .stars-gold { color: var(--amber-gold); font-size: 1.1rem; }
-    
-    .reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-bottom: 2.5rem; }
-    .review-card { background: var(--pure-white); border-radius: var(--radius-md); padding: 1.6rem; box-shadow: var(--shadow-subtle); border: 1px solid rgba(0,0,0,0.05); display: flex; flex-direction: column; justify-content: space-between; position: relative; }
-    .review-user { display: flex; align-items: center; gap: 12px; margin-bottom: 0.8rem; }
-    .avatar-circle { width: 44px; height: 44px; border-radius: 50%; background: linear-gradient(135deg, var(--google-blue), var(--primary-navy)); color: var(--pure-white); font-weight: 800; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; }
-    .review-author { font-weight: 700; color: var(--primary-navy); font-size: 0.98rem; }
-    .review-sub { font-size: 0.78rem; color: var(--text-muted); display: flex; align-items: center; gap: 4px; }
-    .verified-badge { color: #10B981; font-weight: 600; font-size: 0.75rem; }
-    .review-text { font-size: 0.92rem; color: var(--text-dark); line-height: 1.5; font-style: italic; margin-top: 0.5rem; }
-
-    /* Interactive Modal for Writing Reviews */
-    .modal-backdrop { position: fixed; inset: 0; background: rgba(11, 37, 69, 0.6); backdrop-filter: blur(5px); z-index: 2000; opacity: 0; visibility: hidden; transition: 0.3s ease; display: flex; align-items: center; justify-content: center; padding: 1rem; }
-    .modal-backdrop.active { opacity: 1; visibility: visible; }
-    .modal-box { background: var(--pure-white); border-radius: var(--radius-lg); width: 100%; max-width: 520px; padding: 2rem; box-shadow: 0 25px 50px rgba(0,0,0,0.25); position: relative; transform: translateY(20px); transition: transform 0.3s ease; max-height: 90vh; overflow-y: auto; }
-    .modal-backdrop.active .modal-box { transform: translateY(0); }
-    .modal-close { position: absolute; top: 18px; right: 18px; background: none; border: none; font-size: 1.3rem; color: var(--text-muted); cursor: pointer; }
-    
-    .star-rating-select { display: flex; gap: 8px; font-size: 1.8rem; color: #CBD5E1; cursor: pointer; margin: 0.8rem 0 1.2rem; }
-    .star-rating-select i.active { color: var(--amber-gold); }
-
-    /* --- About Section --- */
-    .about-section { padding: 4.5rem 0; background-color: var(--soft-ice); }
-    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; align-items: center; }
-    .about-badge { display: inline-block; background-color: rgba(0, 102, 255, 0.1); color: var(--vibrant-blue); font-weight: 800; padding: 0.3rem 0.9rem; border-radius: var(--radius-full); font-size: 0.8rem; margin-bottom: 0.8rem; }
-    .tech-names { font-size: 1.25rem; font-weight: 800; color: var(--primary-navy); margin: 0.6rem 0; }
-    .exp-badge { display: inline-flex; align-items: center; gap: 8px; background: var(--amber-gold); color: var(--primary-navy); font-weight: 800; padding: 0.45rem 1.1rem; border-radius: var(--radius-sm); margin-bottom: 1rem; font-size: 0.92rem; }
-
-    /* --- Contact Section --- */
-    .contact-section { padding: 4.5rem 0; }
-    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; }
-    .contact-info-box { display: flex; flex-direction: column; gap: 1.5rem; }
-    .info-card { display: flex; gap: 1.2rem; align-items: flex-start; }
-    .info-icon { width: 50px; height: 50px; background: var(--soft-ice); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; font-size: 1.3rem; color: var(--vibrant-blue); flex-shrink: 0; border: 1px solid rgba(0, 102, 255, 0.12); }
-    .info-details h4 { font-size: 1.05rem; color: var(--primary-navy); margin-bottom: 0.2rem; font-weight: 700; }
-    .info-details p, .info-details a { color: var(--text-muted); font-size: 0.92rem; }
-
-    .form-card { background: var(--soft-ice); padding: 2.2rem; border-radius: var(--radius-lg); border: 1px solid rgba(0,0,0,0.05); }
-    .form-group { margin-bottom: 1.1rem; }
-    .form-control { width: 100%; padding: 0.85rem 1.1rem; border-radius: var(--radius-sm); border: 1.5px solid rgba(0,0,0,0.08); font-size: 0.92rem; outline: none; transition: 0.25s; background: var(--pure-white); }
-    .form-control:focus { border-color: var(--vibrant-blue); box-shadow: 0 0 0 4px rgba(0, 102, 255, 0.12); }
-
-    /* --- FAQ Accordion --- */
-    .faq-section { padding: 4.5rem 0; background: var(--soft-ice); }
-    .faq-container { max-width: 820px; margin: 0 auto; display: flex; flex-direction: column; gap: 0.9rem; }
-    .faq-item { background: var(--pure-white); border-radius: var(--radius-md); overflow: hidden; border: 1px solid rgba(0,0,0,0.05); cursor: pointer; transition: 0.25s; }
-    .faq-question { padding: 1.2rem 1.5rem; font-weight: 700; color: var(--primary-navy); display: flex; justify-content: space-between; align-items: center; font-size: 0.98rem; }
-    .faq-answer { padding: 0 1.5rem; max-height: 0; overflow: hidden; transition: all 0.3s ease; color: var(--text-muted); font-size: 0.92rem; line-height: 1.6; }
-    .faq-item.active .faq-answer { padding: 0.5rem 1.5rem 1.2rem; max-height: 220px; }
-    .faq-item.active .faq-icon { transform: rotate(180deg); color: var(--vibrant-blue); }
-
-    /* --- Fixed Mobile Bottom Action Dock --- */
-    .mobile-action-dock { display: none; position: fixed; bottom: 0; left: 0; width: 100%; background: var(--pure-white); border-top: 1px solid rgba(0,0,0,0.1); padding: 0.6rem 0.8rem; z-index: 999; box-shadow: 0 -5px 20px rgba(0,0,0,0.08); }
-    .dock-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; }
-    .dock-btn { display: flex; align-items: center; justify-content: center; gap: 8px; padding: 0.75rem 0.5rem; border-radius: var(--radius-sm); font-weight: 800; font-size: 0.88rem; text-align: center; color: var(--pure-white); border: none; width: 100%; }
-    .dock-call { background: linear-gradient(135deg, var(--vibrant-blue), var(--primary-navy)); }
-    .dock-wa { background-color: var(--whatsapp-green); }
-
-    /* Floating WhatsApp & Call Buttons (Desktop Mode) */
-    .floating-cta-wrap { position: fixed; bottom: 25px; right: 25px; display: flex; flex-direction: column; gap: 12px; z-index: 998; }
-    .float-btn { width: 54px; height: 54px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--pure-white); font-size: 1.4rem; box-shadow: 0 8px 20px rgba(0,0,0,0.2); transition: 0.3s ease; }
-    .float-btn:hover { transform: scale(1.1); }
-    .float-phone { background-color: var(--vibrant-blue); }
-    .float-wa { background-color: var(--whatsapp-green); }
-
-    /* Custom Toast Notification Container */
-    #toast-container { position: fixed; bottom: 80px; right: 20px; z-index: 3000; display: flex; flex-direction: column; gap: 10px; pointer-events: none; }
-    .toast-msg { background: var(--primary-navy); color: var(--pure-white); padding: 0.85rem 1.4rem; border-radius: var(--radius-md); font-weight: 600; font-size: 0.9rem; box-shadow: 0 10px 25px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 10px; border-left: 4px solid var(--accent-cyan); animation: slideInToast 0.3s forwards; }
-    @keyframes slideInToast { from { opacity: 0; transform: translateX(50px); } to { opacity: 1; transform: translateX(0); } }
-
-    footer { background-color: var(--primary-navy); color: rgba(255,255,255,0.7); padding: 2.2rem 0; text-align: center; font-size: 0.88rem; }
-    footer span { color: var(--pure-white); font-weight: 600; }
-
-    /* ====================================================== */
-    /* RESPONSIVE & MOBILE FIXES                             */
-    /* ====================================================== */
-    @media (max-width: 992px) {
-        .nav-menu { display: none; }
-        .mobile-nav-toggle { display: block; }
-        .hero-clean h1 { font-size: 2.3rem; }
-        .banner-box, .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 2rem; text-align: center; }
-        .info-card { text-align: left; }
-    }
-
-    @media (max-width: 768px) {
-        .container { padding: 0 1.2rem; }
-        
-        /* Compact Top Bar on Mobile */
-        .top-info-bar .container { flex-direction: row; justify-content: space-between; }
-        .top-left-info .top-item:nth-child(2) { display: none; } /* Hide long address on tiny bar */
-
-        /* Mobile Header */
-        .card-exact-logo { gap: 8px; }
-        .logo-svg { width: 46px; }
-        .brand-name-main { font-size: 1.3rem; }
-        .brand-subtext { font-size: 0.65rem; }
-        .btn-header { display: none; } /* Handled by bottom mobile dock */
-
-        /* Hero Text & Badge Scaling */
-        .hero-clean { padding: 2.5rem 0 2rem; }
-        .hero-badge { font-size: 0.78rem; padding: 0.35rem 0.9rem; }
-        .hero-clean h1 { font-size: 1.85rem; line-height: 1.2; }
-        .hero-clean p { font-size: 0.95rem; }
-        .hero-cta-btns { flex-direction: column; width: 100%; max-width: 320px; margin: 0 auto; }
-        .btn-cta { width: 100%; justify-content: center; }
-
-        /* Section Headings */
-        .section-header { margin-bottom: 2rem; }
-        .section-header h2 { font-size: 1.65rem; }
-        .section-header p { font-size: 0.88rem; }
-
-        /* Grids & Cards */
-        .stats-grid { grid-template-columns: 1fr 1fr; gap: 1rem; }
-        .stat-item h3 { font-size: 1.5rem; }
-        .services-section, .about-section, .contact-section, .faq-section, .reviews-section { padding: 2.8rem 0; }
-        .types-grid { grid-template-columns: 1fr 1fr; gap: 0.8rem; }
-        .type-item { padding: 1.2rem 0.8rem; }
-
-        /* Floating CTA Hide on Mobile in favor of Bottom Dock */
-        .floating-cta-wrap { display: none; }
-        .mobile-action-dock { display: block; }
-        
-        /* Banner Box */
-        .banner-box { padding: 1.8rem 1.2rem; text-align: center; }
-        .banner-tags { justify-content: center; }
-
-        .form-card { padding: 1.4rem; }
-    }
-
-    @media (max-width: 480px) {
-        .stats-grid { grid-template-columns: 1fr; }
-        .types-grid { grid-template-columns: 1fr; }
-    }
-    </style>
+  footer{
+    text-align:center;
+    margin-top: 40px;
+    color: var(--ink-soft);
+    font-size: 0.82rem;
+  }
+</style>
 </head>
 <body>
 
-    <div class="brand-top-bar"></div>
+<div class="page">
 
-    <!-- 1. Compact Top Contact Bar -->
-    <div class="top-info-bar">
-        <div class="container">
-            <div class="top-left-info">
-                <div class="top-item"><i class="fa-solid fa-clock"></i> Mon - Sat: 9 AM – 10 PM</div>
-                <div class="top-item"><i class="fa-solid fa-location-dot"></i> Servicing All Ahmedabad Areas</div>
-            </div>
-            <div class="top-right-info">
-                <a href="tel:9375228576" class="emergency-link" rel="noopener noreferrer"><i class="fa-solid fa-phone"></i> Call +91 9375228576</a>
-            </div>
-        </div>
+  <div class="logo">
+    <img src="logo.png" alt="Xpert Air Conditioner logo" width="96" height="96">
+  </div>
+
+  <h1 class="brand-title">Xpert Air Conditioner</h1>
+  <p class="brand-sub">AC Installation, Repair &amp; Cooling Services</p>
+  <p class="brand-loc">📍 Ahmedabad, Gujarat</p>
+
+  <div class="links">
+    <a class="link-btn" href="https://maps.app.goo.gl/SDTrXVSzTZzTpWT27" target="_blank" rel="noopener">
+      <span class="link-icon brand-icon ic-maps">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/googlemaps.svg" alt="Google Maps" width="24" height="24">
+      </span>
+      Find Us on Google Maps
+      <span class="link-arrow"><svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    </a>
+
+    <a class="link-btn" href="https://g.page/r/CfQw8FFXYgaJEAE/review" target="_blank" rel="noopener">
+      <span class="link-icon brand-icon ic-google">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/google.svg" alt="Google" width="24" height="24">
+      </span>
+      Write review on google
+      <span class="link-arrow"><svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    </a>
+
+    <a class="link-btn" href="tel:+919375228576">
+      <span class="link-icon ic-call">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C11.6 21 3 12.4 3 2.9c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1L6.6 10.8z" fill="currentColor"/></svg>
+      </span>
+      Call Us
+      <span class="link-arrow"><svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    </a>
+
+    <a class="link-btn" href="https://wa.me/919375228576" target="_blank" rel="noopener">
+      <span class="link-icon brand-icon ic-wa">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/whatsapp.svg" alt="WhatsApp" width="24" height="24">
+      </span>
+      WhatsApp
+      <span class="link-arrow"><svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    </a>
+
+    <a class="link-btn" href="#" id="amcOpen">
+      <span class="link-icon" style="background:#FFF4D8; color:#D99000;">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M7 3h10a2 2 0 012 2v14a2 2 0 01-2 2H7a2 2 0 01-2-2V5a2 2 0 012-2z" stroke="currentColor" stroke-width="1.8"/><path d="M8 7h8M8 11h8M8 15h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </span>
+      AMC (Annual Maintenance Contract)
+      <span class="link-arrow"><svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    </a>
+
+    <a class="link-btn" href="#services">
+      <span class="link-icon ic-serv">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M14.7 6.3a4 4 0 01-5.4 5.4L4 17l3 3 5.3-5.3a4 4 0 015.4-5.4l-3-3z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+      </span>
+      Other Services
+      <span class="link-arrow"><svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    </a>
+
+    <a class="link-btn" href="#contact">
+      <span class="link-icon ic-contact">
+        <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2.5" stroke="currentColor" stroke-width="1.8"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      Contact &amp; Enquiries
+      <span class="link-arrow"><svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    </a>
+  </div>
+
+  <div id="services">
+    <div class="sec-label">Our Services</div>
+    <div class="services-list">
+      <div class="srv-row"><span class="dot"></span><span>AC Installation</span></div>
+      <div class="srv-row"><span class="dot"></span><span>AC Repair</span></div>
+      <div class="srv-row"><span class="dot"></span><span>Gas Filling</span></div>
+      <div class="srv-row"><span class="dot"></span><span>AMC (Annual Maintenance)</span></div>
+      <div class="srv-row"><span class="dot"></span><span>General Servicing</span></div>
+      <div class="srv-row"><span class="dot"></span><span>Deep Cleaning</span></div>
+    </div>
+  </div>
+
+  <div id="contact">
+    <div class="contact-box">
+      <h2>Get in touch</h2>
+      <p>Call or message us directly — most requests in Ahmedabad get a visit slot the same day.</p>
+      <div class="links">
+        <a class="link-btn" href="tel:+919375228576">
+          <span class="link-icon" style="background:rgba(92,225,214,0.14); color:var(--cool);">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C11.6 21 3 12.4 3 2.9c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1L6.6 10.8z" fill="currentColor"/></svg>
+          </span>
+          +91 93752 28576
+        </a>
+        <a class="link-btn" href="https://wa.me/919375228576" target="_blank" rel="noopener">
+          <span class="link-icon" style="background:rgba(92,225,214,0.14); color:var(--cool);">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.4c1.4.8 3.1 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z" stroke="currentColor" stroke-width="1.6"/></svg>
+          </span>
+          WhatsApp us
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer>Xpert Air Conditioner · Ahmedabad, Gujarat</footer>
+</div>
+
+
+<div class="amc-modal" id="amcModal" aria-hidden="true">
+  <div class="amc-box" role="dialog" aria-modal="true" aria-labelledby="amcTitle">
+    <button class="amc-close" id="amcClose" aria-label="Close">&times;</button>
+    <h2 class="amc-title" id="amcTitle">AMC Plans</h2>
+    <p class="amc-subtitle">Choose a plan and see what is included.</p>
+
+    <div class="amc-plans">
+      <div class="amc-plan selected" data-plan="Most Chosen" data-price="2100">
+        <h3>Most Chosen</h3>
+        <div class="amc-price">₹2100</div>
+        <ul class="amc-features">
+          <li>Free service visit</li>
+          <li>AC performance check</li>
+          <li>Gas leakage inspection</li>
+          <li>Priority service support</li>
+          <li>General maintenance included</li>
+        </ul>
+      </div>
+      <div class="amc-plan" data-plan="Regular" data-price="1800">
+        <h3>Regular</h3>
+        <div class="amc-price">₹1800</div>
+        <ul class="amc-features">
+          <li>Free service visit</li>
+          <li>AC performance check</li>
+          <li>Gas leakage inspection</li>
+          <li>Priority service support</li>
+          <li>General maintenance included</li>
+        </ul>
+      </div>
+      <div class="amc-plan" data-plan="Premium" data-price="2600">
+        <h3>Premium</h3>
+        <div class="amc-price">₹2600</div>
+        <ul class="amc-features">
+          <li>Free service visit</li>
+          <li>AC performance check</li>
+          <li>Gas leakage inspection</li>
+          <li>Priority service support</li>
+          <li>General maintenance included</li>
+        </ul>
+      </div>
     </div>
 
-    <!-- 2. Sticky Header with Logo & Drawer Toggle -->
-    <header>
-        <div class="container navbar">
-            <a href="#home" class="card-exact-logo" title="Xpert Air System - Complete AC Solutions">
-                <!-- FULL VIEWBOX VECTOR LOGO -->
-                <svg class="logo-svg" viewBox="0 0 100 135" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g class="logo-snowflake" stroke="#0B2545" stroke-width="2.5" stroke-linecap="round">
-                        <line x1="50" y1="2" x2="50" y2="22" />
-                        <line x1="40" y1="12" x2="60" y2="12" />
-                        <line x1="43" y1="5" x2="57" y2="19" />
-                        <line x1="43" y1="19" x2="57" y2="5" />
-                        <circle cx="50" cy="12" r="1.5" fill="#0B2545"/>
-                    </g>
-                    <rect x="15" y="26" width="70" height="26" rx="5" stroke="#0B2545" stroke-width="3" fill="none"/>
-                    <line x1="19" y1="45" x2="81" y2="45" stroke="#0B2545" stroke-width="2"/>
-                    <rect x="72" y="47" width="6" height="3" rx="1" fill="#0B2545"/>
-                    <path d="M38 56 Q 40 59, 38 62 T 38 67" stroke="#0B2545" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-                    <path d="M50 56 Q 52 59, 50 62 T 50 67" stroke="#0B2545" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-                    <path d="M62 56 Q 64 59, 62 62 T 62 67" stroke="#0B2545" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-                    <text x="2" y="112" font-family="'Outfit', sans-serif" font-weight="900" font-size="46" fill="#0B2545" letter-spacing="-1"></text>
-                    <path class="logo-wave" d="M 0 94 C 30 84, 60 104, 100 91 C 70 102, 30 90, 0 94 Z" fill="#0066FF"/>
-                </svg>
-                
-                <div class="logo-text-col">
-                    <div class="brand-name-main">Xpert Air System</div>
-                    <div class="brand-subtext">Complete AC Solutions</div>
-                </div>
-            </a>
+    <p class="amc-hint">Select a plan, then continue on WhatsApp.</p>
+    <button class="amc-whatsapp" id="amcWhatsapp" type="button">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/whatsapp.svg" alt="WhatsApp">Enquire on WhatsApp
+    </button>
+  </div>
+</div>
 
-            <!-- Desktop Navigation Menu -->
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#services" class="nav-link">Services</a></li>
-                <li><a href="#ac-types" class="nav-link">AC Types</a></li>
-                <li><a href="#sales" class="nav-link">AC Sales</a></li>
-                <li><a href="#amc" class="nav-link">Yearly AMC</a></li>
-                <li><a href="#reviews" class="nav-link">Google Reviews</a></li>
-                <li><a href="#about" class="nav-link">About Us</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
+<script>
+  const amcModal = document.getElementById("amcModal");
+  const amcOpen = document.getElementById("amcOpen");
+  const amcClose = document.getElementById("amcClose");
+  const amcPlans = [...document.querySelectorAll(".amc-plan")];
+  const amcWhatsapp = document.getElementById("amcWhatsapp");
+  let selectedPlan = amcPlans[0];
 
-            <a href="tel:9375228576" class="btn-header" rel="noopener noreferrer"><i class="fa-solid fa-phone"></i> Call 9375228576</a>
+  function openAmc(){ amcModal.classList.add("show"); amcModal.setAttribute("aria-hidden","false"); document.body.style.overflow="hidden"; }
+  function closeAmc(){ amcModal.classList.remove("show"); amcModal.setAttribute("aria-hidden","true"); document.body.style.overflow=""; }
 
-            <!-- Mobile Hamburger Button -->
-            <button class="mobile-nav-toggle" id="mobile-menu-btn" aria-label="Toggle Navigation Menu">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-        </div>
-    </header>
+  amcOpen.addEventListener("click", e => { e.preventDefault(); openAmc(); });
+  amcClose.addEventListener("click", closeAmc);
+  amcModal.addEventListener("click", e => { if(e.target === amcModal) closeAmc(); });
+  document.addEventListener("keydown", e => { if(e.key === "Escape") closeAmc(); });
 
-    <!-- Slide-out Mobile Navigation Drawer & Backdrop -->
-    <div class="drawer-overlay" id="drawer-overlay"></div>
-    <aside class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation">
-        <div>
-            <div class="drawer-header">
-                <div style="font-family:'Outfit',sans-serif; font-weight:800; color:var(--primary-navy); font-size:1.1rem;">Navigation Menu</div>
-                <button class="drawer-close" id="drawer-close-btn" aria-label="Close Navigation"><i class="fa-solid fa-xmark"></i></button>
-            </div>
-            <ul class="drawer-menu">
-                <li><a href="#home" class="drawer-link"><i class="fa-solid fa-house"></i> Home</a></li>
-                <li><a href="#services" class="drawer-link"><i class="fa-solid fa-wrench"></i> Services & Rates</a></li>
-                <li><a href="#ac-types" class="drawer-link"><i class="fa-solid fa-fan"></i> AC Types</a></li>
-                <li><a href="#sales" class="drawer-link"><i class="fa-solid fa-tag"></i> AC Sales</a></li>
-                <li><a href="#amc" class="drawer-link"><i class="fa-solid fa-file-contract"></i> Yearly AMC</a></li>
-                <li><a href="#reviews" class="drawer-link"><i class="fa-solid fa-star"></i> Google Reviews</a></li>
-                <li><a href="#about" class="drawer-link"><i class="fa-solid fa-user-shield"></i> About Us</a></li>
-                <li><a href="#contact" class="drawer-link"><i class="fa-solid fa-envelope"></i> Contact Us</a></li>
-            </ul>
-        </div>
-        <div style="text-align: center; margin-top: 1.5rem;">
-            <a href="tel:9375228576" class="btn-cta btn-primary" style="width: 100%;" rel="noopener noreferrer"><i class="fa-solid fa-phone"></i> Direct Call</a>
-        </div>
-    </aside>
+  amcPlans.forEach(plan => {
+    plan.addEventListener("click", e => {
+      if(e.target.tagName === "TEXTAREA") return;
+      amcPlans.forEach(p => p.classList.remove("selected"));
+      plan.classList.add("selected");
+      selectedPlan = plan;
+    });
+  });
 
-    <main>
-        <!-- 3. Clean Hero Section -->
-        <section class="hero-clean" id="home">
-            <div class="container hero-clean-inner">
-                <div class="hero-badge">
-                    <i class="fa-solid fa-star"></i> <span>5+ Years Experienced AC Specialists in Ahmedabad</span>
-                </div>
-                <h1>Fast & Reliable <span>AC Repair, Fitting, Sales & AMC</span></h1>
-                <p>Led by Kaif Shaikh with our expert technician team. Guaranteed rapid doorstep service across Behrampura, Satellite, Maninagar, SG Highway, and all of Ahmedabad.</p>
-                
-                <div class="hero-cta-btns">
-                    <a href="tel:9375228576" class="btn-cta btn-primary" rel="noopener noreferrer"><i class="fa-solid fa-phone"></i> Call +91 9375228576</a>
-                    <a href="https://wa.me/919375228576" target="_blank" rel="noopener noreferrer" class="btn-cta btn-wa"><i class="fa-brands fa-whatsapp"></i> WhatsApp Booking</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- 4. Trust Stats Bar -->
-        <section class="trust-stats-bar">
-            <div class="container">
-                <div class="stats-grid">
-                    <div class="stat-item">
-                        <h3>5,000+</h3>
-                        <p>ACs Serviced & Installed</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>30 Mins</h3>
-                        <p>Rapid Doorstep Arrival</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>5 / 5 ⭐</h3>
-                        <p>Google Customer Rating</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>100%</h3>
-                        <p>Genuine Spare Parts</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 5. Services Grid with Rates -->
-        <section class="services-section" id="services">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Our Specialized AC Services 🛠️</h2>
-                    <p>Complete cooling solutions with transparent starting rates across all Ahmedabad areas.</p>
-                </div>
-
-                <div class="services-grid">
-                    <!-- Service 1 -->
-                    <article class="service-card">
-                        <span class="price-tag-badge">Starts @ ₹499</span>
-                        <div class="service-emoji">🧼</div>
-                        <h3>1. Deep Jet AC Servicing</h3>
-                        <p>High-pressure foam jet wash, filter flush, cooling coil deep cleaning, and airflow performance optimization.</p>
-                        <ul class="service-highlights">
-                            <li><i class="fa-solid fa-circle-check"></i> Indoor & Outdoor Coil Jet Wash</li>
-                            <li><i class="fa-solid fa-circle-check"></i> Drain Pipe Cleaning & Anti-Clog</li>
-                            <li><i class="fa-solid fa-circle-check"></i> Gas Pressure Checkup Included</li>
-                        </ul>
-                        <a href="tel:9375228576" class="btn-cta btn-primary" style="padding: 0.65rem 1.2rem; font-size: 0.88rem;" rel="noopener noreferrer"><i class="fa-solid fa-phone"></i> Book Service</a>
-                    </article>
-
-                    <!-- Service 2 -->
-                    <article class="service-card">
-                        <span class="price-tag-badge">Starts @ ₹1,199</span>
-                        <div class="service-emoji">🔧</div>
-                        <h3>2. AC Fitting & Uninstallation</h3>
-                        <p>Precision wall mounting, levelling, copper piping setup, vacuuming, and pressure testing for all AC models.</p>
-                        <ul class="service-highlights">
-                            <li><i class="fa-solid fa-circle-check"></i> Split & Window AC Fitting</li>
-                            <li><i class="fa-solid fa-circle-check"></i> Clean Drill & Safe Wall Mounting</li>
-                            <li><i class="fa-solid fa-circle-check"></i> Safe AC Relocation / Shifting</li>
-                        </ul>
-                        <a href="https://wa.me/919375228576?text=I%20want%20to%20book%20an%20AC%20Installation." target="_blank" rel="noopener noreferrer" class="btn-cta btn-wa" style="padding: 0.65rem 1.2rem; font-size: 0.88rem;"><i class="fa-brands fa-whatsapp"></i> Book Fitting</a>
-                    </article>
-
-                    <!-- Service 3 -->
-                    <article class="service-card">
-                        <span class="price-tag-badge">Best Rate Guarantee</span>
-                        <div class="service-emoji">⚡</div>
-                        <h3>3. AC Repairing & Gas Refill</h3>
-                        <p>Fast diagnostic fixes for cooling issues, PCB circuit repairing, compressor fixes, and leak repairs with gas top-up.</p>
-                        <ul class="service-highlights">
-                            <li><i class="fa-solid fa-circle-check"></i> Genuine R32 / R410 / R22 Gas Refill</li>
-                            <li><i class="fa-solid fa-circle-check"></i> PCB Board Diagnostic Fixes</li>
-                            <li><i class="fa-solid fa-circle-check"></i> Compressor & Fan Motor Repair</li>
-                        </ul>
-                        <a href="tel:9375228576" class="btn-cta btn-primary" style="padding: 0.65rem 1.2rem; font-size: 0.88rem;" rel="noopener noreferrer"><i class="fa-solid fa-phone"></i> Request Repair</a>
-                    </article>
-
-                    <!-- Service 4 -->
-                    <article class="service-card highlight-card">
-                        <span class="price-tag-badge highlight-tag">Instant Cash</span>
-                        <div class="service-emoji">♻️</div>
-                        <h3>4. Old AC Buyback & Scrap Parts</h3>
-                        <p>Have old, broken, or non-working ACs? We purchase used AC units, scrap compressors, copper wires, and spare parts at the best cash rates.</p>
-                        <ul class="service-highlights">
-                            <li><i class="fa-solid fa-circle-check"></i> Instant Cash Payment</li>
-                            <li><i class="fa-solid fa-circle-check"></i> Free Doorstep Pickup</li>
-                            <li><i class="fa-solid fa-circle-check"></i> All Scrap Parts & Units Accepted</li>
-                        </ul>
-                        <a href="https://wa.me/919375228576?text=Hi,%20I%20have%20an%20old/scrap%20AC%20unit%20for%20sale." target="_blank" rel="noopener noreferrer" class="btn-cta btn-wa" style="padding: 0.65rem 1.2rem; font-size: 0.88rem;"><i class="fa-brands fa-whatsapp"></i> Sell Scrap AC</a>
-                    </article>
-
-                    <!-- Service 5 -->
-                    <article class="service-card" id="sales">
-                        <span class="price-tag-badge">Discounted Rates</span>
-                        <div class="service-emoji">🏷️</div>
-                        <h3>5. All Types AC Sales (Discounted)</h3>
-                        <p>We sell brand-new and certified refurbished Split, Window, Cassette, and Commercial AC units at special discounted market rates.</p>
-                        <ul class="service-highlights">
-                            <li><i class="fa-solid fa-circle-check"></i> All Leading Brands Available</li>
-                            <li><i class="fa-solid fa-circle-check"></i> Direct Discounted Rates</li>
-                            <li><i class="fa-solid fa-circle-check"></i> Free Expert Buying Advice</li>
-                        </ul>
-                        <a href="https://wa.me/919375228576?text=Hi,%20I%20am%20interested%20in%20buying%20an%20AC." target="_blank" rel="noopener noreferrer" class="btn-cta btn-wa" style="padding: 0.65rem 1.2rem; font-size: 0.88rem;"><i class="fa-brands fa-whatsapp"></i> Inquire Price</a>
-                    </article>
-
-                    <!-- Service 6 -->
-                    <article class="service-card highlight-card" id="amc">
-                        <span class="price-tag-badge highlight-tag">Custom Contract</span>
-                        <div class="service-emoji">🏢</div>
-                        <h3>6. Yearly Service & Agreement (AMC)</h3>
-                        <p>Discounted annual maintenance packages and official service contracts tailored for offices, schools, colleges, and commercial spaces.</p>
-                        <ul class="service-highlights">
-                            <li><i class="fa-solid fa-circle-check"></i> Discounted Annual Packages</li>
-                            <li><i class="fa-solid fa-circle-check"></i> Priority Emergency Service Calls</li>
-                            <li><i class="fa-solid fa-circle-check"></i> Official Corporate Agreements</li>
-                        </ul>
-                        <a href="https://wa.me/919375228576?text=Hi,%20I%20want%20a%20quote%20for%20Yearly%20Service%20AMC%20Agreement." target="_blank" rel="noopener noreferrer" class="btn-cta btn-wa" style="padding: 0.65rem 1.2rem; font-size: 0.88rem;"><i class="fa-brands fa-whatsapp"></i> Get AMC Quote</a>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- 6. Types of AC Section -->
-        <section class="ac-types-banner" id="ac-types">
-            <div class="container">
-                <div class="section-header">
-                    <h2>We Service All Types of ACs 🏢🏠</h2>
-                    <p>No matter the brand, capacity, or model, our expert team handles it all with guaranteed spare parts.</p>
-                </div>
-                <div class="types-grid">
-                    <div class="type-item">
-                        <div class="type-icon"><i class="fa-solid fa-square"></i></div>
-                        <h4>Split AC</h4>
-                        <p style="font-size: 0.85rem; color: var(--text-muted);">Inverter & Non-Inverter</p>
-                    </div>
-                    <div class="type-item">
-                        <div class="type-icon"><i class="fa-solid fa-window-maximize"></i></div>
-                        <h4>Window AC</h4>
-                        <p style="font-size: 0.85rem; color: var(--text-muted);">All Tonnage Units</p>
-                    </div>
-                    <div class="type-item">
-                        <div class="type-icon"><i class="fa-solid fa-grip"></i></div>
-                        <h4>Cassette AC</h4>
-                        <p style="font-size: 0.85rem; color: var(--text-muted);">Commercial Offices & Retail</p>
-                    </div>
-                    <div class="type-item">
-                        <div class="type-icon"><i class="fa-solid fa-building"></i></div>
-                        <h4>Tower / Ductable AC</h4>
-                        <p style="font-size: 0.85rem; color: var(--text-muted);">Large Halls & Industrial Units</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 7. AMC Banner -->
-        <section class="discount-banner">
-            <div class="container">
-                <div class="banner-box">
-                    <div>
-                        <h2>Save Big with Our Yearly Service Contracts (AMC) 💼</h2>
-                        <p>Special discounted rates on annual AC service packages for schools, offices, retail showrooms, institutes, and residential societies across Ahmedabad.</p>
-                        <div class="banner-tags">
-                            <span class="banner-tag">🎓 Schools & Colleges</span>
-                            <span class="banner-tag">🏢 Corporate Offices</span>
-                            <span class="banner-tag">🏭 Factories & Retail</span>
-                            <span class="banner-tag">🏡 Home Societies</span>
-                        </div>
-                    </div>
-                    <div style="text-align: center;">
-                        <a href="https://wa.me/919375228576" target="_blank" rel="noopener noreferrer" class="btn-cta btn-wa" style="font-size: 1.05rem;"><i class="fa-brands fa-whatsapp"></i> Contact For AMC</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 8. Google Reviews Section & Interactive System -->
-        <section class="reviews-section" id="reviews">
-            <div class="container" style="text-align: center;">
-                <div class="section-header">
-                    <h2>Verified Google Reviews ⭐</h2>
-                    <p>Read what satisfied customers across Ahmedabad say about our prompt doorstep service.</p>
-                </div>
-
-                <!-- Google Rating Badge -->
-                <div class="google-badge-box">
-                    <svg class="google-g-icon" viewBox="0 0 24 24">
-                        <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
-                        <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
-                        <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
-                        <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
-                    </svg>
-                    <div style="text-align: left;">
-                        <div class="google-score">5.0 / 5.0</div>
-                        <div class="stars-gold"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                    </div>
-                    <div style="text-align: left; border-left: 1px solid rgba(0,0,0,0.1); padding-left: 1.2rem;">
-                        <div style="font-weight: 800; color: var(--primary-navy);">160+ Verified Google Reviews</div>
-                        <div style="font-size: 0.82rem; color: var(--text-muted);">Top Rated AC Tech in Ahmedabad</div>
-                    </div>
-                    <button class="btn-cta btn-primary" id="open-review-modal-btn" style="padding: 0.6rem 1.2rem; font-size: 0.85rem;"><i class="fa-solid fa-pen-to-square"></i> Write a Google Review</button>
-                </div>
-
-                <!-- Review Cards Grid -->
-                <div class="reviews-grid" id="reviews-grid-container">
-                    <!-- Review 1 -->
-                    <div class="review-card">
-                        <div>
-                            <div class="review-user">
-                                <div class="avatar-circle">P</div>
-                                <div style="text-align: left;">
-                                    <div class="review-author">Aakib Patel</div>
-                                    <div class="review-sub"><i class="fa-solid fa-circle-check verified-badge"></i> Verified Customer • Satellite</div>
-                                </div>
-                            </div>
-                            <div class="stars-gold" style="text-align: left; margin-bottom: 0.4rem;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                            <p class="review-text">"Excellent cleaning for my AC. Very honest pricing and professional work!"</p>
-                        </div>
-                    </div>
-
-                    <!-- Review 2 -->
-                    <div class="review-card">
-                        <div>
-                            <div class="review-user">
-                                <div class="avatar-circle" style="background: linear-gradient(135deg, var(--vibrant-blue), var(--accent-cyan));">S</div>
-                                <div style="text-align: left;">
-                                    <div class="review-author">Kajal Prajapati</div>
-                                    <div class="review-sub"><i class="fa-solid fa-circle-check verified-badge"></i> Verified Customer • Maninagar</div>
-                                </div>
-                            </div>
-                            <div class="stars-gold" style="text-align: left; margin-bottom: 0.4rem;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                            <p class="review-text">"Got our office cassette ACs under yearly AMC contract with Xpert Air System. Service is prompt and they use 100% genuine parts. Best technicians in Ahmedabad!"</p>
-                        </div>
-                    </div>
-
-                    <!-- Review 3 -->
-                    <div class="review-card">
-                        <div>
-                            <div class="review-user">
-                                <div class="avatar-circle" style="background: linear-gradient(135deg, var(--amber-gold), var(--primary-navy));">M</div>
-                                <div style="text-align: left;">
-                                    <div class="review-author">Nilesh Tiwari</div>
-                                    <div class="review-sub"><i class="fa-solid fa-circle-check verified-badge"></i> Verified Customer • SG Highway</div>
-                                </div>
-                            </div>
-                            <div class="stars-gold" style="text-align: left; margin-bottom: 0.4rem;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                            <p class="review-text">"Kaif explained everything clearly before repairing. High quality service!"</p>
-                        </div>
-                    </div>
-                </div>
-
-                <a href="https://maps.app.goo.gl/KXDGNz6Ux1KNZ3UQA" target="_blank" rel="noopener noreferrer" class="btn-cta btn-outline"><i class="fa-brands fa-google"></i> View All Google Maps Reviews</a>
-            </div>
-        </section>
-
-        <!-- 9. About Us Section -->
-        <section class="about-section" id="about">
-            <div class="container about-grid">
-                <div>
-                    <span class="about-badge">TRUSTED AC EXPERTS</span>
-                    <h2>5+ Years of Proven Excellence in AC Solutions</h2>
-                    <div class="exp-badge">⭐ 5+ Years Industry Experience</div>
-                    <div class="tech-names">👨‍🔧 Led by Kaif Shaikh</div>
-                    <p style="color: var(--text-muted); line-height: 1.6;">Alongside our trained expert team of AC technicians, we deliver trusted service, repair, installation, sales, and maintenance across all areas of Ahmedabad and nearby regions.</p>
-                </div>
-                <div style="background: var(--pure-white); padding: 2.2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-subtle); border-left: 5px solid var(--vibrant-blue);">
-                    <h3 style="color: var(--primary-navy); margin-bottom: 1rem; font-weight: 800;">Why Customers Choose Xpert Air System:</h3>
-                    <ul style="list-style: none; color: var(--text-dark); line-height: 2.1; font-weight: 500;">
-                        <li><i class="fa-solid fa-circle-check" style="color: var(--vibrant-blue);"></i> 5+ Years Hands-on Industry Experience</li>
-                        <li><i class="fa-solid fa-circle-check" style="color: var(--vibrant-blue);"></i> Full Team of Skilled AC Technicians</li>
-                        <li><i class="fa-solid fa-circle-check" style="color: var(--vibrant-blue);"></i> Servicing All Ahmedabad & Surrounding Areas</li>
-                        <li><i class="fa-solid fa-circle-check" style="color: var(--vibrant-blue);"></i> Discounted AC Sales & Yearly AMC Contracts</li>
-                        <li><i class="fa-solid fa-circle-check" style="color: var(--vibrant-blue);"></i> 100% Genuine Spare Parts & Transparent Rates</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- 10. Contact Section -->
-        <section class="contact-section" id="contact">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Contact Our Expert Team 📍</h2>
-                    <p>Fast doorstep service provided across Behrampura, Satellite, Maninagar, SG Highway, and all of Ahmedabad.</p>
-                </div>
-
-                <div class="contact-grid">
-                    <div class="contact-info-box">
-                        <div class="info-card">
-                            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
-                            <div class="info-details">
-                                <h4>Address & Coverage</h4>
-                                <p>10, Block 11, PARIKSHIT LAL NAGAR, BEHRAMPURA, AHMEDABAD - 380022<br><b>Servicing All Areas in Ahmedabad</b></p>
-                            </div>
-                        </div>
-                        <div class="info-card">
-                            <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
-                            <div class="info-details">
-                                <h4>Phone Numbers</h4>
-                                <p><a href="tel:9375228576" rel="noopener noreferrer">Mobile 1: +91 9375228576</a><br><a href="tel:9106931101" rel="noopener noreferrer">Email: xpertairsystem@gmail.com</a></p>
-                            </div>
-                        </div>
-                        <div class="info-card">
-                            <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
-                            <div class="info-details">
-                                <h4>Email Address</h4>
-                                <p><a href="mailto:xpertairsystem@gmail.com" rel="noopener noreferrer">xpertairsystem@gmail.com</a></p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Sanitized Form Handling -->
-                    <div class="form-card">
-                        <h3 style="color: var(--primary-navy); margin-bottom: 0.4rem; font-weight: 800;">Quick Booking / Inquiry</h3>
-                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.2rem;">Fill out this form to connect directly with our experts on WhatsApp.</p>
-                        <form id="booking-form">
-                            <div class="form-group">
-                                <input type="text" id="custName" placeholder="Your Name" class="form-control" required maxlength="50">
-                            </div>
-                            <div class="form-group">
-                                <input type="tel" id="custPhone" placeholder="Mobile Number" class="form-control" required pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number">
-                            </div>
-                            <div class="form-group">
-                                <select id="serviceType" class="form-control" required>
-                                    <option value="1. Deep Jet AC Servicing (₹499)">1. Deep Jet AC Servicing (Starts @ ₹499)</option>
-                                    <option value="2. AC Fitting / Uninstallation (₹1199)">2. AC Fitting & Uninstallation (Starts @ ₹1,199)</option>
-                                    <option value="3. AC Repairing & Gas Refill">3. AC Repairing & Gas Refill</option>
-                                    <option value="4. Sell Old Scrap AC">4. Old AC Buyback & Scrap Parts</option>
-                                    <option value="5. Buy New/Refurbished AC">5. All Types AC Sales (Discounted)</option>
-                                    <option value="6. Yearly AMC / Agreement">6. Yearly Service & Agreement (AMC)</option>
-                                </select>
-                            </div>
-                            <button type="submit" class="btn-cta btn-primary" style="width: 100%; justify-content: center;"><i class="fa-brands fa-whatsapp"></i> Send Booking Request</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 11. FAQ Section -->
-        <section class="faq-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Frequently Asked Questions ❓</h2>
-                </div>
-                <div class="faq-container">
-                    <div class="faq-item">
-                        <div class="faq-question"><span>Do you offer yearly service contracts (AMC) for offices and schools?</span> <i class="fa-solid fa-chevron-down faq-icon"></i></div>
-                        <div class="faq-answer">Yes! We provide discounted Annual Maintenance Contracts (AMC) and formal service agreements tailored for corporate offices, schools, colleges, factories, and commercial buildings across Ahmedabad.</div>
-                    </div>
-                    <div class="faq-item">
-                        <div class="faq-question"><span>Which areas in Ahmedabad do you provide AC service in?</span> <i class="fa-solid fa-chevron-down faq-icon"></i></div>
-                        <div class="faq-answer">Our expert team provides fast doorstep AC service, installation, sales, and repairs across Behrampura, Satellite, Maninagar, SG Highway, Bodakdev, Paldi, Ellisbridge, Vastrapur, Navrangpura, and all surrounding areas.</div>
-                    </div>
-                    <div class="faq-item">
-                        <div class="faq-question"><span>Do you sell AC units at discounted prices?</span> <i class="fa-solid fa-chevron-down faq-icon"></i></div>
-                        <div class="faq-answer">Yes, we sell all types of Split, Window, Cassette, and Commercial ACs at special discounted rates. Contact us directly on WhatsApp or call for direct price quotes.</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- "Write a Google Review" Interactive Modal -->
-    <div class="modal-backdrop" id="review-modal">
-        <div class="modal-box">
-            <button class="modal-close" id="close-review-modal-btn" aria-label="Close Modal"><i class="fa-solid fa-xmark"></i></button>
-            <h3 style="color: var(--primary-navy); margin-bottom: 0.3rem; font-weight: 800;">Write a Google Review ⭐</h3>
-            <p style="color: var(--text-muted); font-size: 0.88rem; margin-bottom: 1.2rem;">Share your experience with Xpert Air System. Your review will be submitted directly to Google Maps!</p>
-            
-            <form id="review-form">
-                <div class="form-group">
-                    <label style="font-weight: 700; font-size: 0.85rem; color: var(--primary-navy);">Your Rating</label>
-                    <div class="star-rating-select" id="star-selector">
-                        <i class="fa-solid fa-star active" data-rating="1"></i>
-                        <i class="fa-solid fa-star active" data-rating="2"></i>
-                        <i class="fa-solid fa-star active" data-rating="3"></i>
-                        <i class="fa-solid fa-star active" data-rating="4"></i>
-                        <i class="fa-solid fa-star active" data-rating="5"></i>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <input type="text" id="revName" placeholder="Your Name" class="form-control" required maxlength="50">
-                </div>
-                <div class="form-group">
-                    <input type="text" id="revArea" placeholder="Your Area in Ahmedabad (e.g., Satellite, Maninagar)" class="form-control" required maxlength="50">
-                </div>
-                <div class="form-group">
-                    <textarea id="revComment" placeholder="Write your review comments..." class="form-control" rows="3" required maxlength="300"></textarea>
-                </div>
-
-                <!-- Instant Live Preview Card -->
-                <div style="background: var(--soft-ice); padding: 1rem; border-radius: var(--radius-md); margin-bottom: 1.2rem; text-align: left;">
-                    <div style="font-size: 0.75rem; font-weight: 800; color: var(--text-muted); text-transform: uppercase; margin-bottom: 6px;">Live Preview</div>
-                    <div style="font-weight: 700; color: var(--primary-navy);" id="preview-name">Your Name</div>
-                    <div style="font-size: 0.78rem; color: var(--text-muted);" id="preview-area">Verified Customer • Ahmedabad</div>
-                    <p style="font-size: 0.88rem; color: var(--text-dark); margin-top: 4px; font-style: italic;" id="preview-text">"Your review text will appear here..."</p>
-                </div>
-
-                <button type="submit" class="btn-cta btn-primary" style="width: 100%; justify-content: center;"><i class="fa-brands fa-google"></i> Post Review on Google Maps</button>
-            </form>
-        </div>
-    </div>
-
-    <!-- Desktop Sticky Floating Buttons -->
-    <div class="floating-cta-wrap">
-        <a href="tel:9375228576" class="float-btn float-phone" title="Call Now" rel="noopener noreferrer"><i class="fa-solid fa-phone"></i></a>
-        <a href="https://wa.me/919375228576" target="_blank" rel="noopener noreferrer" class="float-btn float-wa" title="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-    </div>
-
-    <!-- Fixed Mobile Bottom Quick-Action Dock -->
-    <div class="mobile-action-dock">
-        <div class="dock-grid">
-            <a href="tel:9375228576" class="dock-btn dock-call" rel="noopener noreferrer"><i class="fa-solid fa-phone"></i> Call Direct</a>
-            <a href="https://wa.me/919375228576" target="_blank" rel="noopener noreferrer" class="dock-btn dock-wa"><i class="fa-brands fa-whatsapp"></i> WhatsApp Book</a>
-        </div>
-    </div>
-
-    <!-- Toast Notification Container -->
-    <div id="toast-container"></div>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 <span>Xpert Air System - Complete AC Solutions</span>. All Rights Reserved.</p>
-            <p style="font-size: 0.78rem; margin-top: 0.4rem; opacity: 0.75;">Behrampura, Satellite, Maninagar, SG Highway & All Ahmedabad Areas</p>
-        </div>
-    </footer>
-
-    <script>
-        // --- Input Sanitization Helper to Guard Against XSS ---
-        function sanitizeHTML(str) {
-            if (!str) return '';
-            return String(str)
-                .replace(/&/g, '&amp;')
-                .replace(/</g, '&lt;')
-                .replace(/>/g, '&gt;')
-                .replace(/"/g, '&quot;')
-                .replace(/'/g, '&#39;');
-        }
-
-        // --- Toast Notification Helper ---
-        function showToast(msg) {
-            const container = document.getElementById('toast-container');
-            const toast = document.createElement('div');
-            toast.className = 'toast-msg';
-            toast.innerHTML = `<i class="fa-solid fa-circle-check"></i> ${sanitizeHTML(msg)}`;
-            container.appendChild(toast);
-            setTimeout(() => {
-                toast.style.opacity = '0';
-                toast.style.transition = 'opacity 0.3s ease';
-                setTimeout(() => toast.remove(), 300);
-            }, 3500);
-        }
-
-        // --- Mobile Navigation Drawer Logic ---
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const drawerCloseBtn = document.getElementById('drawer-close-btn');
-        const mobileDrawer = document.getElementById('mobile-drawer');
-        const drawerOverlay = document.getElementById('drawer-overlay');
-        const drawerLinks = document.querySelectorAll('.drawer-link');
-
-        function openDrawer() {
-            mobileDrawer.classList.add('active');
-            drawerOverlay.classList.add('active');
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closeDrawer() {
-            mobileDrawer.classList.remove('active');
-            drawerOverlay.classList.remove('active');
-            document.body.style.overflow = '';
-        }
-
-        if (mobileMenuBtn) mobileMenuBtn.addEventListener('click', openDrawer);
-        if (drawerCloseBtn) drawerCloseBtn.addEventListener('click', closeDrawer);
-        if (drawerOverlay) drawerOverlay.addEventListener('click', closeDrawer);
-        drawerLinks.forEach(link => link.addEventListener('click', closeDrawer));
-
-        // --- WhatsApp Booking Form Handling ---
-        const bookingForm = document.getElementById('booking-form');
-        if (bookingForm) {
-            bookingForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                const rawName = document.getElementById('custName').value;
-                const rawPhone = document.getElementById('custPhone').value;
-                const rawService = document.getElementById('serviceType').value;
-
-                const name = sanitizeHTML(rawName);
-                const phone = sanitizeHTML(rawPhone);
-                const service = sanitizeHTML(rawService);
-
-                const message = `*New Booking Request - Xpert Air System*%0A%0A*Name:* ${encodeURIComponent(name)}%0A*Mobile:* ${encodeURIComponent(phone)}%0A*Service Required:* ${encodeURIComponent(service)}`;
-                
-                showToast('Redirecting to WhatsApp...');
-                setTimeout(() => {
-                    window.open(`https://wa.me/919375228576?text=${message}`, '_blank', 'noopener,noreferrer');
-                }, 800);
-            });
-        }
-
-        // --- FAQ Accordion Logic ---
-        const faqs = document.querySelectorAll('.faq-item');
-        faqs.forEach(item => {
-            item.addEventListener('click', () => {
-                faqs.forEach(f => { if (f !== item) f.classList.remove('active'); });
-                item.classList.toggle('active');
-            });
-        });
-
-        // --- Google Review Modal & Star Selector Logic ---
-        const openReviewBtn = document.getElementById('open-review-modal-btn');
-        const closeReviewBtn = document.getElementById('close-review-modal-btn');
-        const reviewModal = document.getElementById('review-modal');
-        const reviewForm = document.getElementById('review-form');
-        const starSelector = document.getElementById('star-selector');
-        
-        const revNameInput = document.getElementById('revName');
-        const revAreaInput = document.getElementById('revArea');
-        const revCommentInput = document.getElementById('revComment');
-
-        const prevName = document.getElementById('preview-name');
-        const prevArea = document.getElementById('preview-area');
-        const prevText = document.getElementById('preview-text');
-
-        let selectedRating = 5;
-
-        if (openReviewBtn) {
-            openReviewBtn.addEventListener('click', () => {
-                reviewModal.classList.add('active');
-            });
-        }
-
-        if (closeReviewBtn) {
-            closeReviewBtn.addEventListener('click', () => {
-                reviewModal.classList.remove('active');
-            });
-        }
-
-        if (reviewModal) {
-            reviewModal.addEventListener('click', (e) => {
-                if (e.target === reviewModal) reviewModal.classList.remove('active');
-            });
-        }
-
-        // Live Preview Inputs
-        if (revNameInput) revNameInput.addEventListener('input', (e) => { prevName.textContent = e.target.value || 'Your Name'; });
-        if (revAreaInput) revAreaInput.addEventListener('input', (e) => { prevArea.textContent = e.target.value ? `Verified Customer • ${e.target.value}` : 'Verified Customer • Ahmedabad'; });
-        if (revCommentInput) revCommentInput.addEventListener('input', (e) => { prevText.textContent = e.target.value ? `"${e.target.value}"` : '"Your review text will appear here..."'; });
-
-        // Star Selection
-        if (starSelector) {
-            const stars = starSelector.querySelectorAll('i');
-            stars.forEach((star, index) => {
-                star.addEventListener('click', () => {
-                    selectedRating = index + 1;
-                    stars.forEach((s, i) => {
-                        if (i <= index) s.classList.add('active');
-                        else s.classList.remove('active');
-                    });
-                });
-            });
-        }
-
-        // Review Form Submit (Adds to live grid & opens Google Maps)
-        if (reviewForm) {
-            reviewForm.addEventListener('submit', (e) => {
-                e.preventDefault();
-                const name = sanitizeHTML(revNameInput.value);
-                const area = sanitizeHTML(revAreaInput.value);
-                const comment = sanitizeHTML(revCommentInput.value);
-
-                // Dynamically add new review card
-                const reviewsContainer = document.getElementById('reviews-grid-container');
-                const newCard = document.createElement('div');
-                newCard.className = 'review-card';
-                
-                let starsHTML = '';
-                for (let i = 0; i < selectedRating; i++) starsHTML += '<i class="fa-solid fa-star"></i>';
-
-                newCard.innerHTML = `
-                    <div>
-                        <div class="review-user">
-                            <div class="avatar-circle">${name.charAt(0).toUpperCase()}</div>
-                            <div style="text-align: left;">
-                                <div class="review-author">${name}</div>
-                                <div class="review-sub"><i class="fa-solid fa-circle-check verified-badge"></i> Verified Customer • ${area}</div>
-                            </div>
-                        </div>
-                        <div class="stars-gold" style="text-align: left; margin-bottom: 0.4rem;">${starsHTML}</div>
-                        <p class="review-text">"${comment}"</p>
-                    </div>
-                `;
-
-                reviewsContainer.prepend(newCard);
-                reviewModal.classList.remove('active');
-                showToast('Review saved! Opening official Google Maps page...');
-
-                setTimeout(() => {
-                    window.open('https://maps.app.goo.gl/KXDGNz6Ux1KNZ3UQA', '_blank', 'noopener,noreferrer');
-                }, 1000);
-            });
-        }
-    </script>
+  amcWhatsapp.addEventListener("click", () => {
+    const planName = selectedPlan.dataset.plan;
+    const price = selectedPlan.dataset.price;
+    const content = [...selectedPlan.querySelectorAll(".amc-features li")]
+      .map((item, index) => `${index + 1}. ${item.textContent.trim()}`)
+      .join("\n");
+    const message = `Hello, I am interested in the AMC plan.\n\nPlan: ${planName}\nPrice: ₹${price}\n\nIncluded:\n${content}`;
+    window.open(`https://wa.me/919375228576?text=${encodeURIComponent(message)}`, "_blank");
+  });
+</script>
 </body>
 </html>
